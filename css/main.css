@@ -1,0 +1,134 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 335;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+.show-btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+}
+.show-btn:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+
+}
+
+.question-card {
+  display: none;
+  position: relative;
+  background: transparent;
+  border-color: var(--mainOrange);
+}
+
+.card.card-body.flashcard.my-3 {
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+
+
+}
+.feedback {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 1.5rem;
+  color: solid red;
+  cursor: pointer;
+}
+.close-btn:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0);
+}
+.submitBtn {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+}
+.submitBtn:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+
+}
+.edit-flashcard {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;;
+}
+.edit-flashcard:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+
+}
+.delete-flashcard {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+}
+.delete-flashcard:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+
+}
+.answer {
+  display: none;
+}
+.showItem {
+  display: block;
+}
